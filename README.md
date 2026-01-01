@@ -38,12 +38,13 @@ Run locally
 1. Clone the repository (or download the ZIP):
       ##
    -       git clone https://github.com/lMarec/Guess-Number.git
-   - If git isn't installed on your computer and you're running a Fedora or Debian based distribution, use the below one-liner command to automatically install git and clone this repository. Otherwise, refer to [the git install guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+   - If git isn't installed on your computer and you're running a Fedora or Debian based distribution, use the below one-liner command to automatically install git, as well as update packages, and clone this repository. Otherwise, refer to [the git install guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
      ##
-           (((sudo apt-get update && sudo apt install git-all) || (sudo dnf install git-all)) && git clone https://github.com/lMarec/Guess-Number.git)
+           ((((sudo apt-get update -y && sudo apt-get upgrade -y) && sudo apt install git-all) || (sudo dnf update -y && sudo dnf install git-all)) && git clone https://github.com/lMarec/Guess-Number.git) && cd Guess-Number
      
 2. Run the game with Node.js:
    - Open a terminal in the project folder and run `node guess.js`.
+   - If you don't have node.js installed, refer to [the node.js download page](https://nodejs.org/en/download).
 
 ## How to play
 1. Run the game with Node.js (as described in Getting started).
