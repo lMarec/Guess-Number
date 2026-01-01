@@ -37,7 +37,12 @@ Prerequisites
 
 Run locally
 1. Clone the repository (or download the ZIP):
-   - git clone https://github.com/lMarec/Guess-Number.git
+      ##
+   -       git clone https://github.com/lMarec/Guess-Number.git
+   - If git isn't installed on your computer and you're running a Fedora or Debian based distribution, use the below one-liner command to automatically install git and clone this repository. Otherwise, refer to [the git install guide](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+     ##
+           (((sudo apt-get update && sudo apt install git-all) || (sudo dnf install git-all)) && git clone https://github.com/lMarec/Guess-Number.git)
+     
 2. Open the project folder and open `index.html` in your browser:
    - Double-click `index.html` or open it from the browser `File -> Open`.
 3. (Optional) Serve the directory with a static server:
