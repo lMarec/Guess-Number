@@ -22,13 +22,13 @@ function askEasy() {
       rl.close();
     } else if (guess < 1 || guess > 100) {
       console.log("Number out of range, try again.");
-      ask();
+      askEasy();
     } else if (guess > number) {
       console.log("Too high");
-      ask();
+      askEasy();
     } else {
       console.log("Too low");
-      ask();
+      askEasy();
     }
     wait(1);
   });
@@ -45,20 +45,20 @@ function askHard() {
       rl.close();
     } else if (guess < 1 || guess > 100) {
       console.log("Number out of range, try again.");
-      ask();
+      askHard();
     } else if (guess > number) {
       console.log("Too high");
-      ask();
+      askHard();
     } else {
       console.log("Too low");
-      ask();
+      askHard();
     }
 
     if (attempts >= 10) {
         console.log("Too many attempts! regenerating number...");
         number = Math.floor(Math.random() * 100) + 1;
         attempts = 0;
-        ask();
+        askHard();
     }
     wait(1);
   });
@@ -78,4 +78,4 @@ function askDifficulty() {
     }); 
 }
 
-askDifficulty();
+askDifficulty();askDifficulty();
